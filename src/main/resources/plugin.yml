@@ -8,9 +8,12 @@ commands:
   cvote:
     usage: /cvote [region name]
     description: This is the command to vote to the region where you are standing.
+    default: true
   cdeletevotes:
     usage: /cdeletevotes
     description: This is the command to delete all votes.
+    permission: chamavote.cdeletevotes
   ctotalvotes:
     usage: /ctotalvotes
     description: This is the command to total votes.
+    permission: chamavote.ctotalvotes
