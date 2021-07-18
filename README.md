@@ -1,7 +1,8 @@
 # ChamaVote
 
 このプラグインは、WorldGuardと連携し、保護に対してそれぞれ1MCIDごとに投票を行うことができ、また、その結果を集計して表示することができます。
-Spigot 1.12.2用プラグインです。
+Spigot 1.12.2用プラグインです。  
+[ChamaVoteManager](https://github.com/GiganticMinecraft/ChamaVoteManager)を置き換えるために作成しました。
 
 ## コマンド
 
