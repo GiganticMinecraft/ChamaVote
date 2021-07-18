@@ -1,0 +1,16 @@
+name: ChamaVote
+version: @version@
+main: click.seichi.chamavote.ChamaVote
+depend:
+  - WorldGuard
+
+commands:
+  cvote:
+    usage: /cvote [region name]
+    description: This is the command to vote to the region where you are standing.
+  cdeletevotes:
+    usage: /cdeletevotes
+    description: This is the command to delete all votes.
+  ctotalvotes:
+    usage: /ctotalvotes
+    description: This is the command to total votes.
