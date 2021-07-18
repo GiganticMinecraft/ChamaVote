@@ -10,6 +10,17 @@
 | cdeletevotes | 投票データを全て削除するコマンド。                           | chamavote.cdeletevotes | op（OP権限保持者のみ実行可能） | 
 | ctotalvotes  | 投票データを集計し、票数の多い順に保護名を表示するコマンド。 | chamavote.ctotalvotes  | op（OP権限保持者のみ実行可能） | 
 
+## 前提プラグイン
+
+* WorldGuard 6.2.2
+
+## ビルド方法
+
+IntelliJ IDEAでの説明を以下に記載します。
+
+* プロジェクトディレクトリに`lib`フォルダを作成し、そこに前提プラグインのJarを追加
+* Gradleタスクのうち、Jarを実行
+
 ## ライセンス
 
 [GPL v3](LICENSE)
