@@ -31,14 +31,14 @@ object VoteCommand : TabExecutor {
 
         val regions = WorldGuard.getRegions(sender.world, sender.location)
         if (regions.size != 1) {
-            sender.sendMessage("${ChatColor.RED}今立っている座標に1つも保護がないか、複数の保護が重なっているようです。保護が1つだけある場所で実行して下さい。")
+            sender.sendMessage("${ChatColor.RED}現在立っている座標に1つも保護がないか、複数の保護が重なっているようです。保護が1つだけある場所で実行して下さい。")
             return true
         }
         val regionName = regions.first().id
 
         Config.setData("voter.${sender.uniqueId}", regionName)
 
-        sender.sendMessage("${ChatColor.GREEN}${regionName}に投票しました。再度コマンドを実行すると投票先をいつでも変更出来ます")
+        sender.sendMessage("${ChatColor.GREEN}${regionName}に投票しました。再度コマンドを実行すると投票先をいつでも変更できます。")
 
         return true
     }
