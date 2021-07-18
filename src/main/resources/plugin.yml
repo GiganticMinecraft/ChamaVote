@@ -6,7 +6,7 @@ depend:
 
 commands:
   cvote:
-    usage: /cvote [region name]
+    usage: /cvote
     description: This is the command to vote to the region where you are standing.
     default: true
   cdeletevotes:
