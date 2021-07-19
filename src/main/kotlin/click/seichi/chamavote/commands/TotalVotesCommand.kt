@@ -18,10 +18,19 @@ object TotalVotesCommand: CommandExecutor {
             return true
         }
 
-        val result =
-            voters.getValues(false).values.toList().groupingBy { it }.eachCount().filter { it.value > 0 }
+        voters.getValues(false).values.groupingBy { it }.eachCount()
             .toList().sortedByDescending { it.second }
-        sender.sendMessage(result.toString())
+            .mapIndexed { idx, value ->
+                "${selectChatColor(idx)}${value.first.toString().uppercase()} -> ${value.second}票"
+            }.forEach { sender.sendMessage(it) }
+
         return true
+    }
+
+    private fun selectChatColor(index: Int): ChatColor = when(index) {
+        0 -> ChatColor.LIGHT_PURPLE
+        1 -> ChatColor.BLUE
+        2 -> ChatColor.AQUA
+        else -> ChatColor.WHITE
     }
 }
