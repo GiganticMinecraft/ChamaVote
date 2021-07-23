@@ -29,7 +29,7 @@ object VoteCommand : TabExecutor {
             return true
         }
 
-        val regions = WorldGuard.getRegions(sender.world, sender.location)
+        val regions = WorldGuard.getRegions(sender.world, sender.location).filterNot { it.id == "spawn" }
         if (regions.size != 1) {
             sender.sendMessage("${ChatColor.RED}現在立っている座標に1つも保護がないか、複数の保護が重なっているようです。保護が1つだけある場所で実行して下さい。")
             return true
