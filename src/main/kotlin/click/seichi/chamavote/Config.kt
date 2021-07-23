@@ -17,7 +17,7 @@ object Config {
         saveConfig()
     }
 
-    fun getSection(path: String): ConfigurationSection = config.getConfigurationSection(path)
+    fun getSection(path: String): ConfigurationSection? = config.getConfigurationSection(path)
 
     private fun reloadConfig() = ChamaVote.plugin.reloadConfig()
 
