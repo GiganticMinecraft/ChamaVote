@@ -8,7 +8,6 @@ object Config {
 
     fun load() {
         saveDefaultConfig()
-
         reloadConfig()
         config = ChamaVote.plugin.config
     }
