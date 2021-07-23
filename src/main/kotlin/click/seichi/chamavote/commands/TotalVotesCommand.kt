@@ -21,7 +21,7 @@ object TotalVotesCommand: CommandExecutor {
         voters.getValues(false).values.groupingBy { it }.eachCount()
             .toList().sortedByDescending { it.second }
             .mapIndexed { idx, value ->
-                "${selectChatColor(idx)}${value.first.toString().uppercase()} -> ${value.second}票"
+                "${selectChatColor(idx)}${value.first} -> ${value.second}票"
             }.forEach { sender.sendMessage(it) }
 
         return true
