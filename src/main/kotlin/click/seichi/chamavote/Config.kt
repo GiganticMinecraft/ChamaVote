@@ -1,5 +1,6 @@
 package click.seichi.chamavote
 
+import org.bukkit.configuration.ConfigurationSection
 import org.bukkit.configuration.file.FileConfiguration
 
 object Config {
@@ -17,7 +18,7 @@ object Config {
         saveConfig()
     }
 
-    fun getSection(path: String) = config.getConfigurationSection(path)
+    fun getSection(path: String): ConfigurationSection = config.getConfigurationSection(path)
 
     private fun reloadConfig() = ChamaVote.plugin.reloadConfig()
 
