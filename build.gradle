@@ -1,14 +1,14 @@
 buildscript {
-    ext {
-        kotlin_version = '1.5.21'
-        spigot_version = '1.12.2-R0.1-SNAPSHOT'
-        worldguard_version = '6.2'
-    }
+    ext.versions = [
+        kotlin: '1.5.21',
+        spigot: '1.12.2-R0.1-SNAPSHOT',
+        worldguard: '6.2'
+    ]
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
     }
 }
 
@@ -43,10 +43,10 @@ repositories {
 }
 
 dependencies {
-    implementation "org.spigotmc:spigot-api:$spigot_version"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    embed "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "com.sk89q.worldguard:worldguard-legacy:$worldguard_version"
+    implementation "org.spigotmc:spigot-api:${versions.spigot}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}"
+    embed "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+    implementation "com.sk89q.worldguard:worldguard-legacy:${versions.worldguard}"
 }
 
 import org.apache.tools.ant.filters.ReplaceTokens
