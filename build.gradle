@@ -47,8 +47,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     embed "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "com.sk89q.worldguard:worldguard-legacy:$worldguard_version"
-
-    implementation fileTree(dir: 'libs', include: '*.jar')
 }
 
 import org.apache.tools.ant.filters.ReplaceTokens
