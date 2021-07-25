@@ -1,5 +1,6 @@
 package click.seichi.chamavote
 
+import click.seichi.chamavote.commands.ConfirmVoteCommand
 import click.seichi.chamavote.commands.DeleteVotesCommand
 import click.seichi.chamavote.commands.TotalVotesCommand
 import click.seichi.chamavote.commands.VoteCommand
@@ -17,7 +18,8 @@ class ChamaVote : JavaPlugin() {
         registerCommands(
             "cvote" to VoteCommand,
             "cdeletevotes" to DeleteVotesCommand,
-            "ctotalvotes" to TotalVotesCommand
+            "ctotalvotes" to TotalVotesCommand,
+            "cconfirmvote" to ConfirmVoteCommand
         )
         Config.load()
         WorldGuard.setInstance()
