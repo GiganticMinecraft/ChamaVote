@@ -17,3 +17,8 @@ commands:
     usage: /ctotalvotes
     description: This is the command to total votes.
     permission: chamavote.ctotalvotes
+  cconfirmvote:
+    usage: /cconfirmvote
+    aliases: ccvote
+    description: This is the command to confirm your vote.
+    default: true
