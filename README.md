@@ -11,6 +11,7 @@ Spigot 1.12.2用プラグインです。
 | cvote        | 投票を行うコマンド。                                         | -                      | true（全員が実行可能）         | 
 | cdeletevotes | 投票データを全て削除するコマンド。                           | chamavote.cdeletevotes | op（OP権限保持者のみ実行可能） | 
 | ctotalvotes  | 投票データを集計し、票数の多い順に保護名を表示するコマンド。 | chamavote.ctotalvotes  | op（OP権限保持者のみ実行可能） | 
+| cconfirmvote | 自分が投票した保護名を確認するコマンド。 | - | true（全員が実行可能） | 
 
 ## 前提プラグイン
 
