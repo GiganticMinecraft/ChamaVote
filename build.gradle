@@ -1,6 +1,6 @@
 buildscript {
     ext.versions = [
-        kotlin: '1.5.21',
+        kotlin: '1.9.25',
         spigot: '1.12.2-R0.1-SNAPSHOT',
         worldguard: '6.2'
     ]
